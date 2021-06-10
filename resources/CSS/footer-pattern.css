@@ -1,0 +1,54 @@
+.footer{
+    background-color: rgba(30, 29, 31, 0.979);
+    columns: 40% 3;
+    font-size: 13px;
+    margin: 0 auto ;
+    opacity: .8;
+    font-family: "Bebas+Neue";
+    border-radius: 8px;
+    background-image: url(https://pbs.twimg.com/profile_banners/950186285121114112/1515377431/1500x500);
+    background-size: cover;
+      
+    height: 40%;
+    background-position: 20% 45%;
+    }
+    
+    
+    .footerLogo{
+      width:50%;
+      
+    }
+    
+    .tableFooter a{
+     
+      padding: 2px;
+      text-decoration: underline;
+    
+    }
+    
+    .tableFooter a:hover{
+    
+      opacity: 1;
+      background-color: #fff;
+      color:rgb(0, 0, 0)
+    }
+
+    
+    
+.tableFooter{
+    border-collapse: collapse; 
+    line-height: 1.1;
+   }
+    
+   .tableFooter td:nth-of-type(1) {
+     width:20%;
+   
+   }
+   .tableFooter td:nth-of-type(2) {
+     width:10%;
+   
+   }
+   .tableFooter td:nth-of-type(3) {
+     width:38%;
+   
+   }

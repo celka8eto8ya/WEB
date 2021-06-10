@@ -1,0 +1,123 @@
+body{
+  background-color: #433b4b;
+  /* background-image: url(http://www.barcelona-travelguide.com/images/leisure/estadio.jpg); */
+
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.container{
+  margin: 0 auto ;
+  width: 70%;
+  color: #fff;
+}
+
+.logotype > img{
+ width: 120px;
+}
+
+.logotype{
+width:  100px;
+height: 20px;
+margin: 0 0 0 0px ;
+
+}
+
+
+
+
+
+
+
+ul {
+  /*Отключение кружочков всяких перед элементом */
+  list-style: none;
+  margin: 0 0 20px -7px ;
+}
+
+nav {
+  height: 45px;
+  margin: 25px 0px 10px 0px ;
+  background-color: rgba(30, 29, 31, 0.979);
+  text-align: center;
+  border-radius: 6px;
+  /*font-family: 'Times New Roman', Times, serif;*/
+  
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.main > li {
+  margin: 0 auto;
+}
+.main > li a{
+  border-left:2px solid #64b191;
+}
+a {
+  padding: 12px 0px ;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  display: block;
+
+  font-size: 14px;
+  transition: background-color .5s ease-in-out;
+}
+
+a:hover {
+  border-radius: 6px;
+  opacity: 1;
+  background-color: #64b191;
+}
+.drop li > a:hover {
+ 
+  opacity: 1;
+  background-color: #fff;
+  color:rgb(0, 0, 0)
+
+
+}
+
+.drop li {
+  opacity: 0;
+  transform-origin: top center;
+}
+
+.drop li a {
+  background-color: rgba(30, 29, 31, 0.979);
+  opacity: .95;
+  padding: 15px 4px;
+}
+
+
+
+/*------------- menu6 animation -------------------*/
+
+.main li:hover .menu6 li:nth-of-type(2n+1) {
+  animation: menu6 0.2s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.main li:hover .menu6  li:nth-of-type(2n) {
+  animation: menu6 0.25s ease-in-out forwards;
+  animation-delay: 0.25s;
+}
+
+@keyframes menu6 {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+

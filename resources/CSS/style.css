@@ -1,0 +1,396 @@
+/* Table of Teams' result */
+/* ______________________ */
+
+.textSimple {
+  text-align:justify;
+  text-indent: 20px;
+  font-weight: normal;
+}
+
+.tableTeams {
+  margin: 0 auto;
+  border-collapse: separate; 
+  line-height: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background:  rgba(30, 29, 31, .8);
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.shapkaTable * {
+  color:#fff;
+  background-color: rgb(19, 80, 121) ;
+  text-decoration: underline ;
+  text-align: center;
+  
+
+}
+
+td[id="id2"] > li {
+ vertical-align: top;
+  list-style-image: url(https://www.realmadrid.com/StaticFiles/RealMadrid/directo/statics/primera/barcelona_peq.png) ;
+  background-color: rgb(51, 219, 65);
+}
+
+.tableTeams td:nth-of-type(1) {
+  width:50px;
+  
+}
+.tableTeams tr:nth-of-type(2n+1) {
+  
+  background-color: rgb(170, 78, 78);
+  
+}
+.tableTeams td:nth-of-type(2) {
+  width:250px;
+  text-align: left;
+
+
+}
+
+.tableTeams td:nth-of-type(3) {
+  width:50px;
+
+}
+.tableTeams td:nth-of-type(4) {
+  width:50px;
+
+}
+.tableTeams td:nth-of-type(5) {
+  width:50px;
+
+}
+.tableTeams td:nth-of-type(6) {
+  width:50px;
+
+}
+.tableTeams td:nth-of-type(7) {
+  width:50px;
+
+}
+.tableTeams td:nth-of-type(8) {
+  width:50px;
+
+}
+.tableTeams td:nth-of-type(9) {
+  width:50px;
+
+}
+.tableTeams td:nth-of-type(10) {
+  width:50px;
+
+}
+
+.tableTeams th {
+  padding: 10px; 
+  border: 1px solid #A9E2CC;
+}
+.tableTeams td {
+  font-size: 0.8em;
+  padding: 5px 7px;
+  border: 1px solid #A9E2CC;
+}
+
+
+/* Authorization */
+/* _____________ */
+
+
+.signIn{
+background-color: blueviolet;
+border-radius: 5px;
+  
+}
+.signInDiv{
+  background-color: rgb(170, 78, 78);
+  border-radius: 5px;
+  text-align: center; 
+}
+
+.h3Text{
+  margin: -10px 0 -15px 0; 
+  text-align: center;
+}
+
+.h4Text{
+  margin: 13px 0 8px 0; 
+  text-align: center;
+}
+
+.containerAuth
+{
+width: 380px;
+margin:0 0 0  280px ;
+}
+
+.buttonLink{
+background-color: rgb(140, 218, 62);
+width: 150px;
+margin: 20px 0 0 115px; 
+border-radius: 5px;
+}
+
+.buttonLink:hover{
+ 
+  background-color: rgb(44, 48, 39); 
+}
+
+input{
+
+  font-size:14px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(140, 218, 62);
+
+}
+
+input:focus{
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(45, 48, 48);
+
+}
+
+
+/* Cards of Socers' personal result */
+/* ________________________________ */
+
+
+.LLRating{
+width: 930px;
+}
+
+.tableStat
+{
+  margin: 0 auto;
+  /* border-collapse: separate;  */
+  /* line-height: 20px; */
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background:  rgba(30, 29, 31, 1);
+  color: #fff;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.tableStat tr:nth-of-type(2n+1) {
+ 
+  /* background-color: rgb(170, 78, 78); */
+  background-color: #69636e;
+
+}
+
+.tableStat tr:nth-of-type(1) {
+  width:20px;
+  font-size: 115%;
+  background-color: rgb(142, 223, 62);
+  opacity: .85;
+  font-weight: bold;
+ 
+}
+.tableStat td:nth-of-type(2) {
+  width:40px;
+}
+
+.tableStat td:nth-of-type(3) {
+  width:140px;
+  text-align: left;
+
+}
+.tableStat td:nth-of-type(4) {
+  width:30px;
+
+}
+
+.tableStat th {
+  padding: 10px; 
+  border: 1px solid #A9E2CC;
+}
+.tableStat td {
+  font-size: 0.8em;
+  padding: 5px 7px;
+  border: 1px solid #A9E2CC;
+}
+
+
+.containerStat{
+
+  columns: 50px 3;
+    height: 410px;
+}
+
+
+
+.leaderBoard
+{
+  /* border-color: rgb(218, 221, 27); */
+  border-color: rgb(60, 224, 211);
+  
+border-style:solid;
+   /* background-color: rgba(30, 29, 31, 0.979); */
+  background-image: url(https://interesnyefakty.org/wp-content/uploads/Foto-Messi-2.jpg);
+ /* background-position-y: 20px; */
+ background-size: contain;
+  width: 280px;
+ height: 371px;
+ border-radius: 10px;
+}
+
+.leaderBoard3
+{
+  border-color: rgb(218, 221, 27);
+  
+border-style:solid;
+   /* background-color: rgba(30, 29, 31, 0.979); */
+  background-image: url(https://assets.laliga.com/squad/2020/t178/p209712/256x278/p209712_t178_2020_1_001_000.png);
+ /* background-position-y: 20px; */
+ background-size: contain;
+  width: 280px;
+ height: 371px;
+ border-radius: 10px;
+}
+
+.imgStat
+{
+  border-radius: 20em;
+  margin:-5px -5px 5px 15px;;
+  width: 230px;
+ /* src:url("messi.png");  */
+}
+
+
+
+.headerStat{
+  font-weight: normal;
+ margin: 0 1px 0 1px;
+  background-color:rgba(30, 29, 31, 0.979);
+  text-align: center;
+  font-size: 120%;
+  border-radius: 6px;
+}
+
+
+
+/* Second variant of style of Socers' cards */
+/* ________________________________________ */
+
+.leaderBoard2
+{
+  border-color: rgb(218, 221, 27);
+  
+  border-style:solid;
+  background-color: rgb(30, 29, 31);
+  /* background-image: url(https://interesnyefakty.org/wp-content/uploads/Foto-Messi-2.jpg); */
+ /* background-position-y: 20px; */
+ /* background-size: contain; */
+  width: 280px;
+ height: 385px;
+ border-radius: 10px;
+}
+.imgStat2
+{
+  border-radius: 20em;
+  margin:-5px -5px 5px 25px;;
+  width: 230px;
+ /* src:url("messi.png");  */
+}
+
+.imgStat3
+{
+  /* border-radius: 20em; */
+  margin:-5px 0px 5px 65px;
+  width: 150px;
+ /* src:url("messi.png");  */
+}
+
+
+.leaderBoard2:hover
+{
+  background-color: rgba(172, 77, 159, 0.979);
+ /* width:280px; */
+ /* height: 400px; */
+ opacity: .9;
+
+
+ /* src:url("messi.png");  */
+}
+
+.headerStat2{
+  font-weight: normal;
+ /* margin: 0 auto; */
+  /* background-color:rgba(30, 29, 31, 0.979); */
+  /* text-align: center; */
+  /* font-size: 110%; */
+  /* border-radius: 6px; */
+margin:5px 0px 5px 0px;
+  text-indent: 20px;
+}
+
+
+/* Exercise */
+/* ________ */
+
+
+#p0, #p3{
+text-indent: 680px;
+color:rgb(136, 230, 43);
+font-weight: bold;
+}
+
+
+.btnLink
+{
+  text-align: center;
+  width: 200px;
+  background-color: rgb(197, 55, 83);
+  border-radius: 10px;
+  margin: 0px 0px 0px 130px;
+}
+
+.divLinks
+{
+  columns: 2 20px;
+}
+
+
+/* Video CSS */
+/* _________ */
+
+.video1
+{
+border-radius: 20px;
+  width: 300px;
+}
+
+.divVideo1{
+  border-radius: 20px;
+  border-color: rgb(209, 62, 214);
+  
+  border-style:solid;
+  background-color: rgb(38, 51, 43);
+width: 300px;
+height: 330px;
+
+transition-timing-function: ease-in;
+transition-duration: .5s;
+}
+
+.divVideo1:hover{
+  background-color: rgb(76, 189, 170);
+
+}
+
+.divVideo1 > p{
+  font-size: 80%;
+  text-indent: 20px;
+  font-weight: normal;
+
+}
+
+.containerVideo{
+  columns: 3 20px;
+}
+
+

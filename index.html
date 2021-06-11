@@ -2,22 +2,27 @@
 <html>
 
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Icon of page-->
+    <link rel="shortcut icon" href="resources/ico/vscode.ico">
+    <title>Second-Layout</title>
 
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt&display=swap" rel="stylesheet">
 
-    <link href="resources\CSS\style.css" rel="stylesheet">
-    <link href="resources\CSS\header-pattern.css" rel="stylesheet">
-    <link href="resources\CSS\footer-pattern.css" rel="stylesheet">
+    <!-- Connection of files -->
+    <link href="res\CSS\style.css" rel="stylesheet">
+    <link href="res\CSS\header-pattern.css" rel="stylesheet">
+    <link href="res\CSS\footer-pattern.css" rel="stylesheet">
+
     <meta charset="utf-8">
-    <title>LaLiga-Santander.com</title>
+
 </head>
 
 <body>
 
     <div class="container">
 
-        <div>
+        <header>
             <nav>
                 <ul class="main">
                     <li>
@@ -78,50 +83,23 @@
                     </li>
                 </ul>
             </nav>
+        </header>
+
+
+
+        <br>
+        <br>
+        <div class="divLinks">
+            <a class="btnLink" onclick="showEx1()">Show Main Exercise</a>
+            <a class="btnLink" onclick="showEx2()">Show Total Exercise</a>
         </div>
-
-
-
         <br>
-        <br>
-        <br>
-        <hr>
-        <h3 class="h4Text">La Liga</h3>
-        <div class="textSimple">
-            <p> <b><u>Приме́ра Дивисьо́н</u></b> (исп. Primera División) профессиональной футбольной лиги Испании (исп.
-                Liga de Fútbol
-                Profesional, LFP), известный также как Примера и Ла Лига (исп. La Liga) — профессиональная футбольная
-                лига
-                высшего уровня в системе футбольных лиг Испании. Ла Лига считается одной из сильнейших лиг в мире.
-            </p>
-
-            <p>На конец еврокубкового сезона 2017/18 годов <b><u>Ла Лига занимает 1-е место</u></b> в рейтинге
-                национальных футбольных
-                ассоциаций УЕФА, который используется для определения представительства стран в еврокубках.</p>
-
-            <p><b><u>Клубный рейтинг</u></b> коэффициентов для ассоциаций считается на основании результатов всех клубов
-                ассоциации в
-                Лиге чемпионов УЕФА и Лиге Европы УЕФА за последние пять сезонов. Рейтинг определяет количество
-                мест для
-                каждой ассоциации (страны) в будущих клубных соревнованиях УЕФА.
-
-            <p><b><u>Рейтинг</u></b> в отдельном сезоне считается на основании результатов всех клубов
-                ассоциации
-                (страны) в
-                текущем
-                розыгрыше Лиги чемпионов УЕФА и Лиги Европы УЕФА.</p>
-            </p>
-            <br>
-            <hr>
-            <h3 class="h4Text">Rating of La Liga</h3>
-            <image class="LLRating" src="resources\image\LLRating.png"></image>
-        </div>
-        <hr>
+        <p id="p0"></p>
+        <p id="p1"></p>
 
 
-
-        <h3 class="h4Text"> Positions of La Liga Teams:</h3>
-
+        <p id="p3"></p>
+        <p id="p2"></p>
 
 
         <div class="footer">
@@ -162,8 +140,7 @@
 
     </div>
 
-
-
+    <script src="res/JS/jsExercise.js"></script>
 </body>
 
 </html>

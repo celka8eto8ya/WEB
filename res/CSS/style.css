@@ -1,6 +1,67 @@
+body{
+  background: rgb(61, 63, 55);
+}
+
 .header1{
   background-color: burlywood;
 }
+
+.wrapperHeader{
+width: 300px;
+ /* align:center; */
+margin:0 auto;
+ background-color: cadetblue;
+}
+
+
+.logo2
+{
+  width: 70px;
+  margin-left:20px;
+ }
+
+
+.nav
+{
+background: chartreuse;
+width: 170px;
+
+}
+
+.nav > ul{
+  list-style: none;
+   
+}
+
+.nav ul li a{
+  
+font-size: 1.3em;
+color: rgb(194, 178, 178);
+transition: all .7s;
+}
+
+.nav ul li {
+  background: rgb(69, 80, 90);
+  border: solid 3px rgb(69, 170, 201);
+
+  
+}
+
+
+.nav ul li:hover{
+  /* background: rgb(194, 178, 178); */
+font-size: 1.5em;
+color: rgb(0, 0, 0);
+border-left: 4px solid rgb(243, 62, 213);
+}
+
+.nav ul li a:hover {
+  background: rgb(194, 178, 178);
+  color: rgb(13, 11, 14);
+  
+}
+
+
 
 .wrapper1{
 background-color: aquamarine;

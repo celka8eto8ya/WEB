@@ -1,0 +1,273 @@
+body{
+    background: rgb(61, 63, 55);
+  }
+  
+  .header1{
+    padding: 15px;
+    background-color: rgb(222, 135, 222);
+    margin:-7px -8px -22px -8px;
+  }
+  
+ 
+  .logo2{
+      background-color: rgb(208, 226, 43);
+      float:left;
+      width: 60px;
+      margin-left: 20px;
+  }
+  .logo3{
+      background-color: aqua;
+    float:right;
+    width: 60px;
+    margin-left: 20px;
+}
+  
+  
+  .nav
+   {
+     
+     /* margin:0px auto;  */
+      /* width: 400px; */
+    clear:both;
+  background: chartreuse;
+margin-left:100px;
+/* margin-top: -50px; */
+/* margin-bottom: 50px; */
+  }
+  
+  .nav > ul{
+    
+    list-style: none;
+    position: fixed;
+    margin-top: -60px;;
+     }
+  
+  .nav ul li a{
+    display: block;
+    width:200px;
+    height: 40px;
+  font-size: 1.3em;
+  color: rgb(194, 178, 178);
+  transition: all .7s;
+  }
+  
+  .nav ul li {
+    width:200px;
+    height: 40px;
+    background: rgb(69, 80, 90);
+    border: solid 3px rgb(69, 170, 201);
+    border-right: none;
+  
+    float:left;
+    }
+    .nav ul li:last-child {
+      border-right: solid 3px rgb(69, 170, 201);
+     
+      }
+  
+  
+  h1{
+    /* margin-top:0px; */
+    margin: 0px;
+    margin-top: 25px;
+    clear: both;
+  }
+  .nav ul li:hover{
+    /* background: rgb(194, 178, 178); */
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  border-left: 4px solid rgb(243, 62, 213);
+  }
+  
+  .nav ul li a:hover {
+    background: rgb(194, 178, 178);
+    color: rgb(13, 11, 14);
+    
+  }
+  
+  
+  
+  .wrapper1{
+  background-color: aquamarine;
+  margin:0px -8px -20px -8px;
+  }
+  
+  
+  aside{
+    padding: 5px;
+    margin:10px  ;
+    background-color: aquamarine;
+    width: 100px;
+    height: 200px;
+    border: 3px solid rgb(70, 78, 68);
+  }
+  .aside1
+  {
+   
+    float: left;
+  }
+  .aside2
+  {
+    
+    float: right;
+  }
+  
+  
+  .main1{
+    padding: 15px;
+    margin: 20px;
+    background-color: rgb(52, 158, 96);
+    min-width: 400px;
+    height: 600px;  
+    overflow: auto;
+  }
+  
+  .display1{
+    display: inline;
+  }
+  
+  .footer1
+  {
+    margin:0px -8px -8px -8px;
+    padding: 15px;
+    background-color: rgb(156, 216, 79);
+   
+    height: 160px;  
+  }
+
+
+
+
+
+  .overlayMenu {
+    position: absolute;
+    text-align: right;
+    right: 10vw;
+    bottom: 10vw;
+   
+       
+           
+        
+    }
+
+.overlayMenu > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    height: 100%;
+}
+.overlayMenu > ul > li {
+    display: block;
+    position: relative;
+
+    width: 100%;
+}
+
+.overlayMenu > ul > li > a {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 40px 10px 40px;
+    margin: 5px 0;
+    transition: 0.2s;
+    background: #2a3140;
+  
+    }
+
+    .overlayMenu > ul > li > a:hover {
+       
+            transform: translateX(-2px);
+            padding-left: 80px;
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
+
+
+ .nav1{
+    /* float: left; */
+    width: 0px;
+   height: 60px;
+   margin: 0 auto;
+} 
+
+      .nav1>  ul {
+            position: fixed;
+            background-color: rgb(232, 148, 235);
+      
+            /* top: 50%;
+            left: 50%; */
+            transform: translate(-50%, -50%);
+            /* margin: 0;
+            padding: 0; */
+            display: flex;
+          }
+          .nav1>  ul li {
+              z-index: 0;
+              
+                
+                 background-color: rgb(206, 114, 114);
+            position: relative;
+            list-style: none;
+          }
+          .nav1>  ul li:first-child {
+            margin-left: -40px;
+          }
+          .nav1> ul li a {
+            
+            position: relative;
+            width: 100px;
+            height: 45px;
+            display: block;
+            font-weight: 600;
+            color: rgb(35, 37, 37);
+            line-height: 40px;
+            text-align: center;
+           
+            text-decoration: none;
+            /* text-transform: uppercase; */
+            transition: .5s;
+            /* box-sizing: border-box; */
+          }
+          .nav1> ul li a span {
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            background-color: rgb(68, 63, 63);
+            z-index: -1;
+            transform-origin: top;
+            transform: scaleY(0);
+            transition: all .5s;
+          } 
+          .nav1> ul li a:hover {
+            color: rgb(109, 212, 152);
+            font-size: 1.2em;
+            /* text-decoration: none; */
+          }
+          .nav1> ul li a:hover span {
+            transform-origin: bottom;
+            transform: scaleY(1);
+          }
+          .nav1>  ul li a span:nth-child(1) {
+            left: 0;
+          
+            transition-delay: 0s;
+          }
+          .nav1>ul li a span:nth-child(2) {
+            left: 25%;
+          
+            transition-delay: 0.15s;
+          }
+          .nav1> ul li a span:nth-child(3) {
+            left: 50%;
+        
+            transition-delay: 0.3s;
+          }
+          .nav1> ul li a span:nth-child(4) {
+            left: 75%;
+          
+            transition-delay: 0.45s;
+          }

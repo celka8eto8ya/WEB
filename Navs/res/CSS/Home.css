@@ -1,0 +1,412 @@
+.cssload-container {
+	width: 117px;
+	margin:0px 0px 0px 10px;
+  float: left;
+}
+
+.cssload-circle-1 {
+	height: 117px;
+	width: 117px;
+	background: rgb(97,46,141);
+}
+
+.cssload-circle-2 {
+	height: 97px;
+	width: 97px;
+	background: rgb(194,34,134);
+}
+
+.cssload-circle-3 {
+	height: 78px;
+	width: 78px;
+	background: rgb(234,34,94);
+}
+
+.cssload-circle-4 {
+	height: 58px;
+	width: 58px;
+	background: rgb(237,91,53);
+}
+
+.cssload-circle-5 {
+	height: 39px;
+	width: 39px;
+	background: rgb(245,181,46);
+}
+
+.cssload-circle-6 {
+	height: 19px;
+	width: 19px;
+	background: rgb(129,197,64);
+}
+
+.cssload-circle-7 {
+	height: 10px;
+	width: 10px;
+	background: rgb(0,163,150);
+}
+
+.cssload-circle-8 {
+	height: 5px;
+	width: 5px;
+	background: rgb(22,116,188);
+}
+
+.cssload-circle-1,
+.cssload-circle-2,
+.cssload-circle-3,
+.cssload-circle-4,
+.cssload-circle-5,
+.cssload-circle-6,
+.cssload-circle-7,
+.cssload-circle-8 {
+	border-bottom: none;
+	border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		-o-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		-ms-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	animation-name: cssload-spin;
+		-o-animation-name: cssload-spin;
+		-ms-animation-name: cssload-spin;
+		-webkit-animation-name: cssload-spin;
+		-moz-animation-name: cssload-spin;
+	animation-duration: 4600ms;
+		-o-animation-duration: 4600ms;
+		-ms-animation-duration: 4600ms;
+		-webkit-animation-duration: 4600ms;
+		-moz-animation-duration: 4600ms;
+	animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite;
+		-ms-animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+		-o-animation-timing-function: linear;
+		-ms-animation-timing-function: linear;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-timing-function: linear;
+}
+
+
+
+@keyframes cssload-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes cssload-spin {
+	from {
+		-o-transform: rotate(0deg);
+	}
+	to {
+		-o-transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes cssload-spin {
+	from {
+		-ms-transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes cssload-spin {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+
+
+
+
+body{
+    background: rgb(61, 63, 55);
+  }
+  
+  .header1{
+    padding: 15px;
+    background-color: burlywood;
+    height: 130px;
+    margin:-7px -8px -35px -8px;
+  }
+
+  .cube{
+    /* background: coral; */
+    
+    border-radius: 5px;
+    display: block;
+    height: 50px;
+    width: 50px;
+
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+
+    float:left;
+    margin:5px 0px 0px 40px;
+
+    animation: TwistCube2 2s infinite ;
+  }
+
+  @keyframes TwistCube {
+    from {
+      background: rgb(228, 127, 90);
+      transform: rotate(0deg);
+    }
+   50% {
+      transform-origin: right bottom;
+      transform: rotate(90deg);
+        background-color: rgb(104, 104, 170);
+    }
+    to {
+      /* transform-origin: right top; */
+      transform: rotate(90deg);
+      /* transform: translate(-10px, 0px);  */
+      background-color: rgb(66, 180, 110); 
+    }}
+    @keyframes TwistCube2 {
+      from {
+         transform-origin: center;
+          background: rgb(233, 137, 102);
+         transform: translate(-30px, 0px);
+      }
+     25% {
+       
+      background: rgb(178, 224, 118);
+      transform: translate(30px, 0px);
+      
+      }
+      50% {
+        background-color: rgb(142, 210, 223);
+        transform: translate(30px, 30px);
+      }
+      75% {
+        background-color: rgb(218, 137, 204);
+        transform: translate(-30px, 30px);
+      }
+      to {
+        background: rgb(228, 127, 90);
+        transform: rotate(360deg);
+        transform: translate(-30px, 0px);
+      }}
+
+      @keyframes MovingCube {
+        from {
+           transform-origin: center;
+         
+           /* transform: translate(50px, 30px); */
+        }
+       25% {
+          transform: translate(30px, 0px);
+       
+        }
+        50% {
+         
+          transform: rotate(180deg);
+            background-color: rgb(138, 138, 211);
+            opacity: .7;
+        }
+        75% {
+         
+          transform: rotate(270deg);
+            background-color: rgb(112, 170, 125);
+            opacity: .6;
+        }
+        to {
+          /* transform-origin: right top; */
+          /* transform: rotate(90deg); */
+          /* transform: translate(-10px, 0px);  */
+          transform: rotate(360deg);
+          background: rgb(228, 127, 90);
+          opacity: .5;
+        }}
+   
+  
+   
+  
+  .nav > ul{
+    list-style: none;
+    margin-left: -40px;
+     }
+  
+  .nav ul li a{
+    display: block;
+  
+    width:155px;
+  font-size: 1.2em;
+  color: rgb(194, 178, 178);
+  transition: all .7s;
+  }
+  
+  .nav ul li {
+    float:left;
+    width:155px;
+    background: rgb(69, 80, 90);
+    border: solid 3px rgb(69, 170, 201);
+   border-bottom: none;
+  
+   
+    }
+    .nav ul li:last-child {
+      border-right: solid 3px rgb(69, 170, 201);
+     
+      }
+  
+  
+  h1{
+    /* margin-top:0px; */
+    margin: 0px;
+    margin-top: 25px;
+    clear: both;
+  }
+  .nav ul li:hover{
+    /* background: rgb(194, 178, 178); */
+  font-size: 1.4em;
+  color: rgb(0, 0, 0);
+  border-left: 4px solid rgb(243, 62, 213);
+  }
+  
+  .nav ul li a:hover {
+    background: rgb(194, 178, 178);
+    color: rgb(13, 11, 14);
+    
+  }
+  
+  
+  
+  .wrapper1{
+  background-color: aquamarine;
+  margin:0px -8px -20px -8px;
+  }
+  
+  
+  aside{
+    padding: 5px;
+    margin:10px  ;
+    background-color: aquamarine;
+   
+    height: 300px;
+    border: 3px solid rgb(70, 78, 68);
+  }
+  .aside1
+  {
+    width: 160px;
+    float: left;
+  }
+  .aside2
+  {
+    width: 130px;
+    float: right;
+  }
+  
+  
+  .main1{
+    padding: 15px;
+    margin: 20px;
+    background-color: rgb(52, 158, 96);
+    min-width: 400px;
+    height: 600px;  
+    overflow: auto;
+  }
+  
+  .display1{
+    display: inline;
+  }
+  
+  .footer1
+  {
+    margin:0px -8px -8px -8px;
+    padding: 15px;
+    background-color: rgb(199, 92, 194);
+   
+    height: 180px;  
+  }
+
+
+
+
+
+
+
+  .nav1{
+    /* float: left; */
+   
+    width: 0px;
+   height: 60px;
+   margin: 0px auto;
+} 
+
+      .nav1>  ul {
+            position: fixed;
+            transform: translate(-50%, -50%);
+            display: flex;
+          }
+          .nav1>  ul li {
+              z-index: 0;
+              /* opacity: .6; */
+                 background-color: rgb(206, 114, 114,0.6);
+            position: relative;
+            list-style: none;
+          }
+          .nav1>  ul li:first-child {
+            margin-left: -40px;
+          }
+          .nav1> ul li a {
+            
+            position: relative;
+            width: 100px;
+            height: 55px;
+            display: block;
+            font-weight: 600;
+            color: rgb(35, 37, 37);
+            line-height: 55px;
+            text-align: center;
+            font-size: 18px;
+           
+            text-decoration: none;
+            transition: .5s;
+          }
+          .nav1> ul > li:last-child{
+            
+           border-top-right-radius: 10px;
+           border-bottom-right-radius: 10px;
+          }
+           .nav1> ul > li:first-child{
+            
+           border-top-left-radius: 10px;
+           border-bottom-left-radius: 10px;
+          }
+          .nav1> ul li a:hover {
+            color: rgb(109, 212, 152);
+            /* font-size: 1.2em; */
+            font-size: 1.3em;
+            border-bottom:2px black;
+            background: rgb(80, 90, 90);
+            /* text-decoration: none; */
+          }
+         

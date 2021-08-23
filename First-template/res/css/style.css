@@ -1,0 +1,107 @@
+/* Обычный */
+@font-face {
+	font-family: 'HelveticaLT'; 
+	src: url(res\fonts\HelveticaLT.ttf); 
+}
+@font-face {
+	font-family: 'HelveticaLT';
+	font-style: normal;
+	font-weight: normal;
+	src: local('HelveticaLT'),
+		url('res/fonts/HelveticaLT.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'fontf6d3fbcdc075293cb1bc7444a6f2f11b';
+        
+        src:    url('https://nomail.com.ua/files/eot/f6d3fbcdc075293cb1bc7444a6f2f11b.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/f6d3fbcdc075293cb1bc7444a6f2f11b.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/f6d3fbcdc075293cb1bc7444a6f2f11b.woff2') format('woff2');
+    }
+    
+    @font-face { font-family: 'Helvetica-Condensed';  src: local('Helvetica-Condensed'), url('https://nomail.com.ua/files/woff/f6d3fbcdc075293cb1bc7444a6f2f11b.woff') format('woff'); }
+    
+    
+    
+    
+    /*````````````````````````````````` noMail.com.ua - Каталог шрифтов ```````````````````````````````````````*/
+    
+    
+    #helveticacondensed { font-family:'Helvetica-Condensed'; }
+    .fontf6d3fbcdc075293cb1bc7444a6f2f11b { font-family: 'fontf6d3fbcdc075293cb1bc7444a6f2f11b'; }
+    
+    
+
+
+  *{
+      margin:0;
+    box-sizing: border-box;
+  }
+  html, body{
+    height: 100%;
+    width:1280px;
+    margin: 0 auto
+  
+  }
+
+  .header{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: #4e99a5;
+      height: 87px;
+  }
+
+  .nav > ul {
+        list-style: none;
+      display: flex;
+      flex-direction: row;
+       padding-right: 109px;
+  }
+  
+  .nav a {
+      text-decoration: none ;
+      color:white;
+      font-size: 18px;
+      line-height: 95px;
+     
+      font-family:'Helvetica-Condensed';
+  }
+  .nav li {
+  
+    color:white;
+    font-size: 18px;
+    line-height: 95px;
+    font-family:'Helvetica-Condensed';
+    margin-right:23px;
+}
+
+.logo{
+    font-family: 'Cherry Swash', arial;
+    color:white;
+    font-size: 40px;
+    line-height: 85px;
+    padding-left: 183px;
+}
+
+.article1{
+    display: flex;
+    flex-direction: column;
+    /* /* background: tomato; */
+   background-image: url(../img/Layer1.png); 
+     /* background-image: url(https://i.ytimg.com/vi/DcSTRzLR1t0/maxresdefault.jpg); */
+     /* background: url('max.jpg') ; */
+     background-size: inherit;
+  
+    height:475px;
+    
+    font-size: 38px;
+    color:white;
+    font-family:'Helvetica-Condensed';
+    font-weight: bold;
+}
+
+.text1, .a1{
+
+    margin: 130px auto 0px;
+}
+

@@ -1,0 +1,42 @@
+/*Fonts need to replace in separate file*/
+
+/* Обычный */
+@font-face {
+	font-family: 'HelveticaLT'; 
+	src: url(res\fonts\HelveticaLT.ttf); 
+}
+@font-face {
+	font-family: 'HelveticaLT';
+	font-style: normal;
+	font-weight: normal;
+	src: local('HelveticaLT'),
+		url('res/fonts/HelveticaLT.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'fontf6d3fbcdc075293cb1bc7444a6f2f11b';
+        
+        src:    url('https://nomail.com.ua/files/eot/f6d3fbcdc075293cb1bc7444a6f2f11b.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/f6d3fbcdc075293cb1bc7444a6f2f11b.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/f6d3fbcdc075293cb1bc7444a6f2f11b.woff2') format('woff2');
+    }
+    
+    @font-face { font-family: 'Helvetica-Condensed';  src: local('Helvetica-Condensed'), url('https://nomail.com.ua/files/woff/f6d3fbcdc075293cb1bc7444a6f2f11b.woff') format('woff'); }
+    
+    
+    
+    
+    /*````````````````````````````````` noMail.com.ua - Каталог шрифтов ```````````````````````````````````````*/
+    
+    
+    #helveticacondensed { font-family:'Helvetica-Condensed'; }
+    .fontf6d3fbcdc075293cb1bc7444a6f2f11b { font-family: 'fontf6d3fbcdc075293cb1bc7444a6f2f11b'; }
+    
+    
+    @font-face {
+      font-family: 'HelveticaLTStd Bold'; 
+      src: url('../fonts/HelveticaLTStd\ Bold.otf'); 
+    }
+    @font-face {
+        font-family: 'HelveticaLTStd Light'; 
+        src: url('../fonts/HelveticaLTStd\ Light.otf'); 
+      }

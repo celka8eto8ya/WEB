@@ -125,4 +125,109 @@ background-image: url(../img/Ellipse1-selected.png);
 }
 
 
+.article2{
+background: #ffffff;
+height: 443px;
+display:flex;
+flex-direction: column;
+
+}
+
+  .text2 {
+    margin:71px auto 0;
+    font-size: 30px;
+    font-family: "HelveticaLTStd Light";
+    display: block;
+    color: rgb(76, 80, 93);
+    line-height: 49px;
+    text-align: center;
+    width: 634px;
+    height: 77px;
+  }
+  .text3 {
+    margin:47px auto 0;
+    margin-left: 193px;
+    display: block;
+    font-size: 14px;
+    font-family: "HelveticaLTStd Roman";
+    color: rgb(76, 80, 93);
+    line-height: 22px;
+    text-align: center;
+    width: 882px;
+  }
+  .icons{
+display: flex;
+flex-direction: row;
+list-style-type: none;
+width:425px;
+margin:71px auto 0;
+padding: 0;
+  }
+
+   .Shape {
+   
+     margin:0;
+     display:block;
+    z-index: 20;
+    background-size: contain;
+
+    width: 56px;
+    height: 50px;
+  margin-right:127px;
+  
+  
+  }
+  .Shape1 {
+   background-image: url(../img/Shape\ 2.png);
+ }
+ .Shape2 {
+  background-image: url(../img/Shape\ 3.png);
+  height: 55px;
+  width: 55px;
+  margin-top:-3px;
+}
+  
+.Shape3 {
+  background-image: url(../img/Shape\ 4.png);
+  height: 49px;
+  width:51px;
+  margin-left:-1px
+}
+  
+   
+.article3{
+  background: #00d089;
+  height: 468px;
+  display:flex;
+  flex-direction: row;
+  }
+  
+
+  .Photo1{
+    background-image: url(../img/PhotoDhavan.png);
+      width: 135px;
+      height: 135px;
+      margin:96px 0px 0px 579px;
+  }
+
+  .wrapper1{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .Photo2{
+    background-image: url(../img/dhavan\ .png);
+      width: 103px;
+      height: 19px;
+     margin:107px 0px 0px 38px;
+  }
+  .Photo3{
+    background-image: url(../img/copy.png);
+    width: 103px;
+      height: 19px;
+     margin:107px 0px 0px 38px;
+  }
+  
+  
+
 

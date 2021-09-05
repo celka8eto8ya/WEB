@@ -76,5 +76,17 @@ html, body{
   background: blueviolet;
 }
 
+.text2{
+  font-family: 'Raleway Medium';
+  font-size: 57px;
+  color: rgb(255, 255, 255);
+  margin: -13px 60px;
+}
+.text3{
+  font-family: 'Monoton Regular';
+  font-size: 71px;
+  color: rgb(255, 255, 255);
+  margin: -16px 6px
+}
 
 

@@ -6,3 +6,7 @@
         font-family: 'Raleway Medium'; 
         src: url('../fonts/RalewayMedium.ttf'); 
       }
+      @font-face {
+        font-family: 'Monoton Regular'; 
+        src: url('../fonts/MonotonRegular.ttf'); 
+      }

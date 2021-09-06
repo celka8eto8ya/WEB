@@ -6,7 +6,11 @@
 html, body{
   height: 100%;
   max-width:1440px;
-  margin: 0 auto
+  margin: 0 auto;
+  background-image: url(../img/Background.png);
+   /* background-size: 100% 100%; */
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
 
 }
 
@@ -56,7 +60,9 @@ html, body{
   margin:-87px 0px;
   z-index:10;
   width:130%;
-  background-image: url(../img/Background.png);
+  /* background-image: url(../img/Background.png); */
+ background-position: 0px -431px;
+ background-repeat: no-repeat;
   height: 995px;
 }
 
@@ -72,7 +78,7 @@ html, body{
   background: rgb(43, 226, 156);
 }
 .article1-Item2{
-  flex:0 1 40%;
+  flex: 0 1 47%;
   background: blueviolet;
 }
 
@@ -87,6 +93,29 @@ html, body{
   font-size: 71px;
   color: rgb(255, 255, 255);
   margin: -16px 6px
+}
+.text4{
+  font-family: 'Raleway Semibold';
+    font-size: 62px;
+    color: rgb(255, 255, 255);
+    margin: 24px 0px 0px 12px;
+}
+
+.rectangle{
+  background-image: url(../img/Rectangle\ .png);
+    width: 161px;
+    height: 7px;
+  margin:16px 0px 0px 340px;
+}
+.text5{
+  font-family: 'Raleway Medium';
+    font-size: 14px;
+    margin: 24px 0px 0px -40px;
+      font-size: 25px;
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+      text-align: right;
+      width: 82%;
 }
 
 

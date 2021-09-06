@@ -10,3 +10,8 @@
         font-family: 'Monoton Regular'; 
         src: url('../fonts/MonotonRegular.ttf'); 
       }
+
+      @font-face {
+        font-family: 'Raleway Semibold'; 
+        src: url('../fonts/RalewaySemibold.ttf'); 
+      }

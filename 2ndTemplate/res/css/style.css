@@ -9,15 +9,17 @@ html, body{
   margin: 0 auto;
   background-image: url(../img/Background.png);
   background-repeat: no-repeat;
-  background-position: 0px -22px;
+  background-position: 0px 0px;
 
 }
 
   .header{
-      z-index:100;
+    position: absolute;
+      z-index:150;
       height: 65px;
-      margin-left:57px;
-      margin-top:22px;
+      padding-left:57px;
+      padding-top:22px;
+      /* line-height: 10px; */
   }
 
   .nav > ul {
@@ -55,7 +57,7 @@ html, body{
     margin-right:18px;
 }
 .main1{
-  margin:-87px 0px;
+  margin:0px 0px;
   z-index:10;
   position:absolute;
   width:130%;
@@ -64,12 +66,12 @@ html, body{
   /* background-image: url(../img/Background.png); */
  background-position: 0px 0px;
  background-repeat: no-repeat;
-  height: 995px;
+  height: 1000px;
 }
 
 .article1{
   width:80%;
-  margin:431px 200px;
+  margin:431px 0px 176px 200px;
   display:flex;
   flex-direction: row;
 
@@ -118,10 +120,22 @@ html, body{
 }
 .button{
   background-image: url(../img/Button.png);
+ display:block;
   width: 254px;
   height: 48px;
   opacity: 0.8;
   margin:51px 0px 0px 248px;
 }
-
+.article2{
+  background: #000001;
+  margin:0px 0px 0px 0px;
+  height:52%;
+}
+.smart_object{
+  position:absolute;
+  background-image: url(../img/Smart_Object.png);
+width:52px;
+height: 52px;
+margin:122px 0px 0px 694px;
+}
 

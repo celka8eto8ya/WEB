@@ -15,3 +15,8 @@
         font-family: 'Raleway Semibold'; 
         src: url('../fonts/RalewaySemibold.ttf'); 
       }
+
+      @font-face {
+        font-family: 'Raleway Regular'; 
+        src: url('../fonts/Raleway_Regular.ttf'); 
+      }

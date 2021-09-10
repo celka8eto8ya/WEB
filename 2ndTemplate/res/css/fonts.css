@@ -20,3 +20,7 @@
         font-family: 'Raleway Regular'; 
         src: url('../fonts/Raleway_Regular.ttf'); 
       }
+      @font-face {
+        font-family: 'Myriad Pro'; 
+        src: url('../fonts/Myriad_Pro.ttf'); 
+      }

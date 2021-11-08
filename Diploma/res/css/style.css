@@ -39,7 +39,7 @@ body {
     flex-direction: row;
 }
 
-.header {
+#header {
     position: absolute;
     width: 100%;
     z-index: 150;
@@ -127,7 +127,7 @@ body {
     margin: 399px auto 200px auto;
     /* margin:200px auto; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: right;
 }
 
@@ -136,6 +136,15 @@ body {
   margin-top:30px; */
     flex: 0 1 90%;
     /* border: solid 4px red; */
+}
+.hero-Item0 {
+    /* margin-left:99px;
+  margin-top:30px; */
+    /* flex: 0 1 90%; */
+    /* border: solid 4px red; */
+    margin: 20px;
+    padding: 10px;
+    margin-top:-100px;
 }
 
 .hero-Item2 {
@@ -189,6 +198,47 @@ body {
     height: 48px;
     opacity: 0.8;
     margin: 51px 0px 0px 248px;
+}
+.container_hero_butt{
+display:block;
+}
+.hero_button0 {
+    /* position: absolute; */
+    background-image: url(../img/Button.png);
+    display: block;
+    width: 254px;
+    height: 48px;
+    opacity: 0.8;
+    margin: 0px auto;
+}
+td{
+    width:200px;
+    height:30px;
+    /*  opacity:0.5; */
+    /* background-color: #fff 0.1; */
+    background: #fff 0.1;
+}
+#table  {
+margin: 0px auto;
+  
+}
+#table  th{
+    height:30px;
+	background: rgb(92, 84, 84);
+    opacity: .9;
+    color:#fff;
+  
+}
+/* Нечетные строки */
+#table tbody tr:nth-child(odd){
+	background: rgb(223, 134, 218);
+    opacity: .8;
+}
+ 
+/* Четные строки */
+#table tbody tr:nth-child(even){
+	background: #F7F7F7;
+    opacity: .6;
 }
 
 .section2 {

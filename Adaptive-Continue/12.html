@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Icon of page-->
+    <link rel="shortcut icon" href="res/ico/vscode.ico" />
+    <title>ADAPTIVE</title>
+
+
+
+    <script src="/Adaptive-Continue/123.js"></script>
+
+    <!-- <link href="res\CSS\header-pattern.css" rel="stylesheet">
+    <link href="res\CSS\footer-pattern.css" rel="stylesheet"> -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+    <div id="header"></div>
+    <div>body</div>
+    <div id="footer"></div>
+    <script>
+        const loader = (filename, placeholder) => {
+            fetch(filename, {
+                method: 'GET',
+                headers: new Headers({
+                    "Content-Type": "text/plain"
+                })
+            })
+                .then(r => r.text())
+                .then(r => document.getElementById(placeholder).innerHTML = r)
+        }
+        window.addEventListener('DOMContentLoaded', function () {
+            loader('header.html', 'header')
+            // loader('footer.html', 'footer')
+        })
+    </script>
+
+</body>
+
+</html>

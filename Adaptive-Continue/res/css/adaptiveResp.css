@@ -93,7 +93,8 @@ body {
 .subcontainer3x {
   display: flex;
   flex-direction: row;
-  height: 280px;
+  flex-wrap: wrap;
+  height: 500px;
 }
 
 .subcontainer2x {
@@ -104,7 +105,7 @@ body {
 
 .article1 {
   background: coral;
-  flex: 0 1 33%;
+  flex: 1 1 30%;
   border: solid 4px red;
   padding: 10px;
   margin: 10px;
@@ -243,7 +244,47 @@ body {
   .header_menu.active {
     top: 0;
   }
+
+  .article1 {
+    background: rgb(80, 235, 255);
+    flex: 1 1 45%;
+    border: solid 4px rgb(9, 255, 0);
+  }
+  .subcontainer3x {
+    flex-wrap: wrap;
+    height: 510px;
+  }
+  .article1_p {
+    display: block;
+    padding: 10px;
+    overflow: scroll;
+
+    height: 48px;
+  }
+
+  /* .article1_div {
+    height: 65%;
+    background-color: #4e99a5;
+  }
+  .article1_p {
+    padding: 10px;
+  } */
 }
+
+@media (max-width: 600px) {
+  .subcontainer3x {
+    flex-direction: column;
+    height: 1210px;
+  }
+  .article1 {
+    background: rgb(175, 75, 162);
+    flex: 1 1 20%;
+    border: solid 4px rgb(23, 36, 23);
+  }
+}
+/* .header_row {
+    background: none;
+  } */
 /*#endregion */
 
 /*#region For special moment in adaptive*/

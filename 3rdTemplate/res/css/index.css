@@ -2,12 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(68, 68, 75);
+  /* background-color: rgb(68, 68, 75); */
 }
 
 .header {
   width: 100%;
-  height: 50px;
+  height: 92px;
   background-color: darkcyan;
   position: fixed;
 }
@@ -16,13 +16,14 @@
   max-width: 1150px;
   margin: 0 auto;
   padding: 15px;
+  background-color: rgb(68, 68, 75, 0.9);
   /* background-color: darkorchid; */
 }
 
 .header_body {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header_list ul {
@@ -33,17 +34,84 @@
   margin-left: 20px;
   list-style: none;
 }
+.header_list li > a {
+  line-height: 2.85;
+  /* font-family: "CLEANVEB"; */
+
+  /* font-family: "DeutschGothic"; */
+  /* font-family: "Gagalin"; */
+  /* font-family: "beerMoney"; */
+
+  font-family: "MuseoSansCyrl";
+  font-size: 21px;
+  /* font-family: "CLEANVEL";
+  font-weight: bold; */
+}
 
 .header_logo {
   display: flex;
   flex-direction: row;
+  /* width: 50px; */
 }
-.heder_logo_img img {
-  width: 5%;
+
+.header_logo_img img {
+  width: 3%;
   background-color: rgb(201, 169, 159);
   border-radius: 20%;
+  width: 70px;
 }
 .header a {
-  color: fuchsia;
+  color: rgb(199, 112, 199);
   text-decoration: none;
+}
+
+.header_logo_text {
+  margin-left: 20px;
+  display: block;
+  width: 70%;
+  line-height: 2.35;
+  /* font-family: "CLEANVEB"; */
+  /* font-family: "CLEANVEL"; */
+  /* font-family: "DeutschGothic"; */
+  /* font-family: "Gagalin"; */
+  font-family: "beerMoney";
+  font-weight: normal;
+  /* font-family: "MuseoSansCyrl"; */
+  font-size: 26px;
+}
+
+.changeTheme {
+  display: block;
+  /* line-height: 2.2; */
+  margin-top: 5px;
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  background-color: rgb(203, 176, 228);
+  border-radius: 48%;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/5115/5115349.png");
+}
+.main {
+  padding-top: 80px;
+}
+
+.main_article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.article_element {
+  flex: 0 1 30%;
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-image: url("https://bipbap.ru/wp-content/uploads/2019/05/2bd4df276e1b9b7df3c414989786fd2b.jpg");
+  background-size: cover;
+  /* background-color: cadetblue; */
+}
+.png1 {
+  /* background-color: rgb(203, 176, 228); */
+  background-image: url("https://bipbap.ru/wp-content/uploads/2019/05/2bd4df276e1b9b7df3c414989786fd2b.jpg");
+  border-radius: 48%;
 }

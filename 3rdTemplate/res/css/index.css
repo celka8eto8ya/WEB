@@ -7,8 +7,8 @@
 
 .header {
   width: 100%;
-  height: 92px;
-  background-color: darkcyan;
+  height: 76px;
+  background-color: rgb(68, 68, 75);
   position: fixed;
 }
 
@@ -16,7 +16,7 @@
   max-width: 1150px;
   margin: 0 auto;
   padding: 15px;
-  background-color: rgb(68, 68, 75, 0.9);
+  background-color: rgb(68, 68, 75, 0.95);
   /* background-color: darkorchid; */
 }
 
@@ -35,15 +35,15 @@
   list-style: none;
 }
 .header_list li > a {
-  line-height: 2.85;
+  /* line-height: 2.85; */
   /* font-family: "CLEANVEB"; */
 
   /* font-family: "DeutschGothic"; */
   /* font-family: "Gagalin"; */
   /* font-family: "beerMoney"; */
-
+  line-height: 43px;
   font-family: "MuseoSansCyrl";
-  font-size: 21px;
+  font-size: 19px;
   /* font-family: "CLEANVEL";
   font-weight: bold; */
 }
@@ -55,25 +55,34 @@
 }
 
 .header_logo_img img {
-  width: 3%;
+  /* width: 10%; */
   background-color: rgb(201, 169, 159);
-  border-radius: 20%;
-  width: 70px;
+  border-radius: 50%;
+  width: 51px;
 }
 .header a {
-  color: rgb(199, 112, 199);
+  color: rgb(206, 143, 206);
   text-decoration: none;
 }
-
+.header li > a {
+  margin-left: 10px;
+  transition: 0.3s all linear;
+}
+.header li > a:hover {
+  background-color: rgb(240, 227, 240);
+  color: rgb(40, 40, 43);
+  border-radius: 15%;
+}
 .header_logo_text {
   margin-left: 20px;
   display: block;
   width: 70%;
-  line-height: 2.35;
+  /* line-height: 2.35; */
   /* font-family: "CLEANVEB"; */
   /* font-family: "CLEANVEL"; */
   /* font-family: "DeutschGothic"; */
   /* font-family: "Gagalin"; */
+  line-height: 43px;
   font-family: "beerMoney";
   font-weight: normal;
   /* font-family: "MuseoSansCyrl"; */
@@ -83,35 +92,105 @@
 .changeTheme {
   display: block;
   /* line-height: 2.2; */
-  margin-top: 5px;
-  width: 45px;
-  height: 45px;
+  /* margin-top: 5px; */
+  width: 40px;
+  height: 40px;
   background-size: cover;
   background-color: rgb(203, 176, 228);
   border-radius: 48%;
   background-image: url("https://cdn-icons-png.flaticon.com/512/5115/5115349.png");
 }
-.main {
-  padding-top: 80px;
-}
 
+.main {
+  padding-top: 76px;
+}
+.category_article {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  /* line-height: 2.35; */
+  /* font-family: "CLEANVEB"; */
+  /* font-family: "CLEANVEL"; */
+  font-weight: bold;
+  font-family: "DeutschGothic";
+  /* font-family: "Gagalin"; */
+  /* font-family: "beerMoney"; */
+  color: rgb(240, 234, 234);
+}
 .main_article {
+  height: 100%;
+
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
 }
 
 .article_element {
-  flex: 0 1 30%;
+  flex: 0 1 32%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* height: 300px; */
   display: block;
-  width: 300px;
-  height: 300px;
-  background-image: url("https://bipbap.ru/wp-content/uploads/2019/05/2bd4df276e1b9b7df3c414989786fd2b.jpg");
-  background-size: cover;
+  border: solid 3px rgb(240, 240, 240);
+  border-radius: 15%;
+  overflow: hidden;
+  position: relative;
   /* background-color: cadetblue; */
 }
-.png1 {
-  /* background-color: rgb(203, 176, 228); */
-  background-image: url("https://bipbap.ru/wp-content/uploads/2019/05/2bd4df276e1b9b7df3c414989786fd2b.jpg");
-  border-radius: 48%;
+
+.article_element_background {
+  overflow: hidden;
+  height: 300px;
+  display: block;
+  transition: 0.3s all linear;
+}
+.article_element_background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15%;
+}
+
+.article_element_background:hover {
+  /* width: 115%;
+  height: 115%; */
+  transform: scale(1.2);
+}
+.article_element_background:hover::after {
+  content: attr(data-title); /* Выводим текст */
+  position: absolute; /* Абсолютное позиционирование */
+  left: 0;
+  right: 0;
+  bottom: 36px; /* Положение подсказки */
+  z-index: 1; /* Отображаем подсказку поверх других элементов */
+  background: rgba(81, 82, 85, 0.9); /* Полупрозрачный цвет фона */
+  text-align: center; /* Выравнивание текста по центру */
+  font-family: Arial, sans-serif; /* Гарнитура шрифта */
+  font-size: 11px; /* Размер текста подсказки */
+  padding: 30px 10px; /* Поля */
+  border: 1.5px solid rgb(253, 253, 253); /* Параметры рамки */
+}
+.article_element_name {
+  position: absolute;
+  margin-top: -50px;
+  color: rgb(255, 255, 255);
+
+  font-size: 24px;
+  font-family: "CLEANVEB";
+
+  padding-left: 10%;
+  /* font-family: "CLEANVEL"; */
+  font-weight: bold;
+  /* font-family: "DeutschGothic"; */
+  /* font-family: "Gagalin"; */
+  /* font-family: "beerMoney"; */
+}
+.article_element_date {
+  display: block;
+  font-size: 20px;
+  margin-top: -80px;
 }

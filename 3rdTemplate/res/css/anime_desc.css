@@ -9,7 +9,7 @@ html,
 body {
   height: 100%;
 }
-
+/*#region HEADER*/
 .header {
   top: 0px;
   width: 100%;
@@ -134,6 +134,11 @@ body {
   /* background-image: url("https://cdn-icons-png.flaticon.com/512/5115/5115349.png"); */
 }
 
+/*#endregion HEADER*/
+
+.main_body {
+  background-color: rgb(254, 255, 239);
+}
 .category_article {
   text-align: center;
   text-decoration: underline;
@@ -152,59 +157,45 @@ body {
 .main_article {
   height: 100%;
 
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
-
-.article_element {
-  flex: 0 1 31%;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  /* height: 300px; */
+.article_background {
   display: block;
-  border: solid 3px rgb(240, 240, 240);
-  border-radius: 15%;
-  overflow: hidden;
-  position: relative;
-  /* background-color: cadetblue; */
-}
 
-.article_element_background {
   overflow: hidden;
-  height: 300px;
-  display: block;
-  cursor: pointer;
-  transition: 0.3s all linear;
+  height: 380px;
+
+  /* cursor: pointer; */
+  /* transition: 0.3s all linear; */
 }
-.article_element_background img {
+.article_background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 15%;
+  /* border-radius: 15%; */
 }
 
-.article_element_background:hover {
-  /* width: 115%;
-  height: 115%; */
-  transform: scale(1.2);
+.article_desc p {
+  padding: 30px 45px;
+  font-size: 20px;
+  /* line-height: 2.35; */
+  /* font-family: "CLEANVEB"; */
+  /* font-family: "CLEANVEL"; */
+  font-weight: bold;
+  font-family: "CLEANVEL";
+  color: rgb(43, 42, 44);
+  text-align: justify;
 }
-.article_element_background:hover::after {
-  content: attr(data-title); /* Выводим текст */
-  position: absolute; /* Абсолютное позиционирование */
-  left: 0;
-  right: 0;
-  bottom: 36px; /* Положение подсказки */
-  z-index: 1; /* Отображаем подсказку поверх других элементов */
-  background: rgba(81, 82, 85, 0.9); /* Полупрозрачный цвет фона */
-  text-align: center; /* Выравнивание текста по центру */
-  font-family: Arial, sans-serif; /* Гарнитура шрифта */
-  font-size: 11px; /* Размер текста подсказки */
-  padding: 30px 10px; /* Поля */
-  border: 1.5px solid rgb(253, 253, 253); /* Параметры рамки */
+.article_desc span:before {
+  content: "\269B";
+  display: block;
+  margin-left: 20px;
 }
+
 .article_element_name {
   position: absolute;
   margin-top: -50px;
@@ -214,18 +205,94 @@ body {
   font-family: "CLEANVEB";
 
   padding-left: 10%;
-  /* font-family: "CLEANVEL"; */
   font-weight: bold;
-  /* font-family: "DeutschGothic"; */
-  /* font-family: "Gagalin"; */
-  /* font-family: "beerMoney"; */
 }
 .article_element_date {
   display: block;
   font-size: 20px;
   margin-top: -80px;
 }
+.main_article h2 {
+  padding: 12px 65px;
+  font-size: 26px;
+  /* line-height: 2.35; */
+  /* font-family: "CLEANVEB"; */
+  /* font-family: "CLEANVEL"; */
+  font-weight: bold;
+  font-family: "CLEANVEL";
+  color: rgb(43, 42, 44);
+  text-align: justify;
+}
+/*#region SLIDER*/
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
 
+/* .article_slider {
+  padding: 12px 65px;
+  display: flex;
+  justify-content: space-around;
+} */
+.article_slider img {
+  width: 280px;
+  height: 230px;
+}
+
+/*#endregion SLIDER*/
+
+/*#region FOOTER*/
 .footer {
   height: 33%;
   background-color: rgb(63, 47, 70);
@@ -285,17 +352,13 @@ body {
   background-color: blue;
   margin-bottom: 8px;
 }
+/*#endregion FOOTER*/
 
-/*#region Main sheet for adaptive*/
+/*#region MediaQuery*/
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
     /* background-color: blueviolet; */
-  }
-  .article_element {
-    flex: 0 1 48%;
-    margin-top: 10px;
-    margin-bottom: 20px;
   }
 }
 
@@ -303,11 +366,6 @@ body {
   .container {
     max-width: 750px;
     /* background-color: burlywood; */
-  }
-  .article_element {
-    flex: 0 1 95%;
-    margin-top: 10px;
-    margin-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -422,3 +480,4 @@ body {
     height: 40px;
   }
 }
+/*#endregion MediaQuery*/

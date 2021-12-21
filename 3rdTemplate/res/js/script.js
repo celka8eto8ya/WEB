@@ -10,3 +10,8 @@ $(document).ready(function () {
 
     });
 });
+
+$(document).ready(function () {
+    $('.article_slider').slick();
+});
+

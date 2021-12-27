@@ -226,6 +226,9 @@ body {
 /*#region SLIDER*/
 /* Слайдер */
 .slick-slider {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
 /* Слайдер запущен */
 .slick-slider.slick-initialized {
@@ -236,34 +239,66 @@ body {
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
+  margin-right: 45px;
+  margin-left: 45px;
 }
 /* Лента слайдов */
 .slick-track {
   display: flex;
+  /* margin-left: 45px;  */
+  margin-bottom: 20px;
 }
 /* Слайд */
 .slick-slide {
+  margin-right: 5px;
 }
+
 /* Слайд активный (показывается) */
 .slick-slide.slick-active {
+  margin-right: 5px;
 }
 /* Слайд основной */
 .slick-slide.slick-current {
+  margin-right: 5px;
 }
 /* Слайд по центру */
 .slick-slide.slick-center {
+  margin-right: 5px;
 }
 /* Клонированный слайд */
 .slick-slide.slick-cloned {
 }
 /* Стрелка */
 .slick-arrow {
+  width: 22px;
+  height: 43px;
+  font-size: 0;
+  position: absolute;
+  z-index: 5;
+  top: 90px;
+  border: 0px;
 }
 /* Стрелка влево */
 .slick-arrow.slick-prev {
+  display: block;
+
+  /* background-image: url("../3rdTemplate/res/img/left_arow.png"); */
+  /* background-image: url("http://cdn.onlinewebfonts.com/svg/download_72240.png"); */
+  background: url("../img/left_arrow.svg") 0 0 / 100% no-repeat;
+  background-position: -10px 0px;
+  background-size: cover;
+
+  margin-left: 10px;
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next {
+  /* background-image: url("../3rdTemplate/res/img/left_arow.png"); */
+  /* background-image: url("http://cdn.onlinewebfonts.com/svg/download_72240.png"); */
+  background: url("../img/right_arrow.svg") 0 0 / 100% no-repeat;
+  background-position: -10px 0px;
+  background-size: cover;
+  right: 0;
+  margin-right: 10px;
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled {
@@ -280,13 +315,8 @@ body {
 .slick-dots li button {
 }
 
-/* .article_slider {
-  padding: 12px 65px;
-  display: flex;
-  justify-content: space-around;
-} */
 .article_slider img {
-  width: 280px;
+  width: 320px;
   height: 230px;
 }
 

@@ -92,23 +92,25 @@ body {
   margin-left: 10px;
   transition: 0.3s all linear;
 }
-.header li > a.Picked {
-  background-color: rgb(240, 227, 240);
-  color: rgb(40, 40, 43);
-  border-radius: 15%;
+.header a.Picked {
+  color: rgb(240, 227, 240);
 }
 .header li > a:hover {
   background-color: rgb(240, 227, 240);
   color: rgb(40, 40, 43);
-  border-radius: 15%;
+  border-radius: 2%;
   color: rgb(206, 143, 206);
   background-color: rgb(206, 143, 206);
+  color: rgb(240, 227, 240);
+}
+.header_logo_text:hover {
   color: rgb(240, 227, 240);
 }
 .header_logo_text {
   margin-left: 20px;
   display: block;
   width: 70%;
+  height: 20px;
   /* line-height: 2.35; */
   /* font-family: "CLEANVEB"; */
   /* font-family: "CLEANVEL"; */
@@ -117,8 +119,32 @@ body {
   line-height: 43px;
   font-family: "beerMoney";
   font-weight: normal;
+
   /* font-family: "MuseoSansCyrl"; */
   font-size: 26px;
+  transition: 0.3s all linear;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../icon/arrow-left-square.svg");
+}
+.carousel-control-next-icon {
+  background-image: url("../icon/arrow-right-square.svg");
+}
+
+.pickLogoText {
+  height: 80%;
+}
+.row .card img {
+  transform: scale(0.7);
+}
+
+.row .card {
+  margin: 0 auto;
+}
+.row .card {
+  background-color: rgb(125, 146, 146);
+  margin-bottom: 15px;
 }
 
 .changeTheme {

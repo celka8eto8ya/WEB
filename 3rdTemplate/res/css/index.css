@@ -87,22 +87,24 @@ body {
 .header a {
   color: rgb(206, 143, 206);
   text-decoration: none;
+  transition: 0.3s all linear;
 }
 .header li > a {
   margin-left: 10px;
   transition: 0.3s all linear;
 }
-.header li > a.Picked {
-  background-color: rgb(240, 227, 240);
-  color: rgb(40, 40, 43);
-  border-radius: 15%;
+.header a.Picked {
+  color: rgb(240, 227, 240);
 }
 .header li > a:hover {
   background-color: rgb(240, 227, 240);
   color: rgb(40, 40, 43);
-  border-radius: 15%;
+  border-radius: 2%;
   color: rgb(206, 143, 206);
   background-color: rgb(206, 143, 206);
+  color: rgb(240, 227, 240);
+}
+.header_logo_text:hover {
   color: rgb(240, 227, 240);
 }
 .header_logo_text {

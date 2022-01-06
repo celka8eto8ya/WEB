@@ -1,3 +1,17 @@
+:root {
+  --footerColor: rgb(72, 67, 87);
+  --headerColor76: rgba(63, 63, 83, 0.76);
+  --mainColor: rgb(102, 80, 99);
+  --fontColor1: rgb(206, 143, 206);
+  --fontColor1Pick: rgb(240, 227, 240);
+
+  --lightFooterColor: rgb(179, 120, 176);
+  --ligtHeaderColor76: rgba(175, 115, 179, 0.76);
+  --lightMainColor: rgb(192, 137, 169);
+  --fontColor1: rgb(206, 143, 206);
+  --lightFontColor1: rgb(56, 50, 56);
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -14,23 +28,32 @@ body {
   top: 0px;
   width: 100%;
   height: 76px;
-  background-color: rgba(63, 63, 83, 0.76);
+  background-color: var(--headerColor76);
   backdrop-filter: blur(2px);
 
   position: fixed;
   z-index: 20;
 }
 .main {
-  background-color: rgb(80, 62, 78);
+  background-color: var(--mainColor);
   padding-top: 76px;
   padding-bottom: 15px;
   /* position: relative; */
 }
 .header.active {
-  background-color: rgb(218, 209, 209);
+  background-color: var(--ligtHeaderColor76);
+}
+.header.active a {
+  /* color: rgb(219, 150, 150); */
+  color: var(--lightFontColor1);
+  /* color: var(--lightHeaderFooterColor); */
 }
 .main.active {
-  background-color: rgb(214, 167, 216);
+  background-color: var(--lightMainColor);
+  /* position: relative; */
+}
+.footer.active {
+  background-color: var(--lightFooterColor);
   /* position: relative; */
 }
 

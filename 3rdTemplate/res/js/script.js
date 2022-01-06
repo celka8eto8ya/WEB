@@ -6,7 +6,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
     $('.changeTheme').click(function (event) {
-        $('.header,.main').toggleClass('active');
+        $('.header,.main,.footer').toggleClass('active');
 
     });
 });

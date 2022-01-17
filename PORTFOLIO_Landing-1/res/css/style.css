@@ -1,0 +1,71 @@
+:root {
+  --fontColor1: #ffffff;
+  /* --footerColor: rgb(72, 67, 87);
+    --headerColor76: rgba(63, 63, 83, 0.76);
+    --mainColor: rgb(102, 80, 99);
+ */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+  /* background-color: rgb(68, 68, 75); */
+}
+html,
+body {
+  height: 100%;
+}
+
+.header {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 82px;
+  background-color: #21243d;
+  z-index: 30;
+}
+
+.section_start {
+  max-height: 800px;
+  color: var(--fontColor1);
+}
+.section_Backgr {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nav-link {
+  color: var(--fontColor1);
+  font-family: "Montserrat Regular";
+  font-size: 18px;
+}
+.form-control,
+.btn {
+  max-height: 30px;
+  max-width: 40px;
+}
+.form-control {
+  max-width: 180px;
+}
+
+.btn img,
+.nav_Logo img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+.nav_Logo img {
+  width: 75%;
+  height: 75%;
+}
+.navbar-nav {
+  padding-left: 150px;
+}
+.navbar {
+  padding: 16px 30px;
+}

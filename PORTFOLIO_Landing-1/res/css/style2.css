@@ -1,0 +1,17 @@
+.icons {
+  /* transform: scale(1.2); */
+  /* text-decoration: none; */
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* margin-right: 10px; */
+  margin-right: 8px;
+}
+.third {
+  margin-left: -3px;
+}
+.icons svg {
+  /* display: block; */
+  /* margin-right: 10px; */
+}

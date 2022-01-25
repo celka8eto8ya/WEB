@@ -186,6 +186,10 @@ h2 {
 .section_third .button_slide {
   margin-top: 48px;
 }
+.section_third img {
+  display: block;
+  margin: 0 auto;
+}
 /*#endregion 3rdSection*/
 
 .footer1 {
@@ -198,6 +202,31 @@ h2 {
 }
 
 /*#region MediaQuery*/
+
+@media (max-width: 998px) {
+  .sect3_container {
+    padding-top: 10px;
+  }
+  .section_third img {
+    transform: scale(0.85);
+  }
+  .sect3_right_col {
+    padding-top: 0;
+  }
+  .sect3_right_col .title_desc {
+    margin-top: 12px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .section_third .button_slide {
+    margin-top: 18px;
+    margin: 0 auto;
+  }
+  .sect3_title > h2 {
+    font-size: 46px;
+    text-align: center;
+  }
+}
 
 @media (max-width: 800px) {
   h1 {

@@ -95,16 +95,16 @@ h1 {
   /* font-weight: bold; */
 }
 .first_section {
-  padding-left: 45px;
+  /* padding-left: 45px; */
 }
 .title_desc {
   font-size: 28px;
   font-family: "Montserrat Regular";
   /* color: rgb(255, 255, 255); */
   line-height: 1.2;
-  text-align: left;
+  /* text-align: left; */
   margin-top: 50px;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .button_slide {
   height: 62px;
@@ -115,7 +115,7 @@ h1 {
   font-size: 22px;
   font-family: "Montserrat Bold";
   margin-top: 30px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   line-height: 2.8;
 }
 .button_slide > a {
@@ -269,6 +269,9 @@ h2 {
     max-height: 250px;
     overflow: hidden;
   }
+  h1 {
+    font-size: 65px;
+  }
 }
 @media (max-width: 450px) {
   .nav_Logo > img {
@@ -278,7 +281,7 @@ h2 {
     max-width: 140px;
   }
   h1 {
-    font-size: 50px;
+    font-size: 42px;
   }
   .section_second .sect2_cards {
     max-height: 500px;

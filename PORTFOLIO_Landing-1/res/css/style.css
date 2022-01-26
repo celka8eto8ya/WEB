@@ -1,18 +1,12 @@
 :root {
   --fontColor1: #ffffff;
   --headerColor: #21243d;
-  /* --footerColor: rgb(72, 67, 87);
-    --headerColor76: rgba(63, 63, 83, 0.76);
-    --mainColor: rgb(102, 80, 99);
- */
 }
 
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-
-  /* background-color: rgb(68, 68, 75); */
 }
 html,
 body {
@@ -92,30 +86,22 @@ body {
 h1 {
   font-size: 120px;
   font-family: "Montserrat Bold";
-  /* font-weight: bold; */
 }
-.first_section {
-  /* padding-left: 45px; */
-}
+
 .title_desc {
   font-size: 28px;
   font-family: "Montserrat Regular";
-  /* color: rgb(255, 255, 255); */
   line-height: 1.2;
-  /* text-align: left; */
   margin-top: 50px;
-  /* text-align: justify; */
 }
 .button_slide {
   height: 62px;
-  /* width: 23%; */
   background-color: var(--headerColor);
 
   border-radius: 30px;
   font-size: 22px;
   font-family: "Montserrat Bold";
   margin-top: 30px;
-  /* margin-left: 15px; */
   line-height: 2.8;
 }
 .button_slide > a {
@@ -192,8 +178,28 @@ h2 {
 }
 /*#endregion 3rdSection*/
 
+/*#region 4thSection*/
+.sect4_items {
+  margin-top: 90px;
+}
+.sect4_item {
+  display: block;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  width: 274px;
+  height: 274px;
+}
+.sect4_item_title {
+  font-size: 70px;
+  font-family: "Montserrat Bold";
+}
+.sect4_item_subtitle {
+  font-size: 42px;
+  font-family: "Montserrat Bold";
+}
+/*#endregion 4thSection*/
+
 .footer1 {
-  /* display: block; */
   width: 100%;
   height: 400px;
   position: absolute;
@@ -202,7 +208,13 @@ h2 {
 }
 
 /*#region MediaQuery*/
-
+@media (max-width: 1200px) {
+  .sect4_item {
+    width: 240px;
+    height: 240px;
+    margin-left: -15px;
+  }
+}
 @media (max-width: 998px) {
   .sect3_container {
     padding-top: 10px;
@@ -225,6 +237,13 @@ h2 {
   .sect3_title > h2 {
     font-size: 46px;
     text-align: center;
+  }
+  .sect4_items {
+    margin: 35px auto;
+    overflow-x: scroll;
+  }
+  .sect4_item {
+    margin: 0 auto;
   }
 }
 
@@ -264,13 +283,21 @@ h2 {
     margin-top: -15px;
   }
   .section_second .food_desc {
-    /* visibility: hidden; */
     display: block;
     max-height: 250px;
     overflow: hidden;
   }
   h1 {
     font-size: 65px;
+  }
+  .sect4_items {
+    margin: 15px auto;
+    overflow-x: scroll;
+    max-height: 575px;
+    background-color: #41456b;
+  }
+  .sect4_item {
+    margin: 10px auto;
   }
 }
 @media (max-width: 450px) {
